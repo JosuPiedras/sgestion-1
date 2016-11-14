@@ -1,5 +1,6 @@
 inherited frmPresupuestos: TfrmPresupuestos
   Caption = 'Presupuestos'
+  ExplicitTop = -13
   PixelsPerInch = 96
   TextHeight = 13
   inherited tbCatalogo: TToolBar
@@ -32,7 +33,7 @@ inherited frmPresupuestos: TfrmPresupuestos
         Height = 13
         Caption = 'Nombre'
       end
-      object edtNombre: TDBEdit
+      object Nombre: TDBEdit
         Left = 46
         Top = 0
         Width = 472
@@ -67,7 +68,23 @@ inherited frmPresupuestos: TfrmPresupuestos
         Columns = <
           item
             Expanded = False
+            FieldName = 'NUMERO'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'FECHA'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'TRANPASADO'
+            Visible = True
+          end
+          item
+            Expanded = False
             FieldName = 'PRODUCTOS'
+            Width = 76
             Visible = True
           end
           item
@@ -78,11 +95,23 @@ inherited frmPresupuestos: TfrmPresupuestos
           item
             Expanded = False
             FieldName = 'CANTIDAD'
+            Width = 46
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'SUBTOTAL'
+            Width = 47
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'PAGADO'
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'OBSERVACIONES'
             Visible = True
           end>
       end
@@ -90,7 +119,7 @@ inherited frmPresupuestos: TfrmPresupuestos
   end
   inherited imgImagenes: TImageList
     Bitmap = {
-      494C010105000800200120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800280120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1155,7 +1184,7 @@ inherited frmPresupuestos: TfrmPresupuestos
   end
   inherited imgImagenesGris: TImageList
     Bitmap = {
-      494C0101050008003C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800440120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090

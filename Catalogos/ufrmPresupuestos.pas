@@ -11,7 +11,7 @@ uses
 
 type
   TfrmPresupuestos = class(TfrmCatalogo)
-    edtNombre: TDBEdit;
+    Nombre: TDBEdit;
     lblNombre: TLabel;
     navDatos: TDBNavigator;
     dbgdatos: TDBGrid;
